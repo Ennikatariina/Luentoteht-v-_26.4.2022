@@ -1,7 +1,7 @@
 fetch("https://api.jokes.one/jod")
     .then(response => response.json())
     .then(
-        data =>{ document.getElementById("joke").innerHTML= data.contents.jokes[0].joke.title; 
+        data =>{ document.getElementById("joke").innerHTML= data.contents.jokes[0].joke.title + "<br>";
         document.getElementById("joke").innerHTML+=data.contents.jokes[0].joke.text;}
         );
         console.log()
