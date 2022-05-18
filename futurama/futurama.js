@@ -14,9 +14,9 @@ fetch("https://futuramaapi.herokuapp.com/api/quotes")
                 let li =document.createElement('li');
 
                 //Aseta sisältö li-elementti
-                quote.quote.style.fontStyle="italic";
-                li.innerHTML= quote.character + ": '" + quote.quote + "'" +  + "'";
                 quote.style.fontStyle="italic";
+                li.innerHTML= quote.character + ": '" + quote.quote + "'" +  + "'";
+                //quote.style.fontStyle="italic";
                 //Lisää li-elementti ul-elementille
                 ul.appendChild(li);
             });
